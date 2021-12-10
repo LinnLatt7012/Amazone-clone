@@ -9,13 +9,15 @@ It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-
 
 Preview the example live on [Vercel](https://amazone-clone-omega.vercel.app):
 
-[![Open in Vercel](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Aw3Ez-1c-PTy0r7DC7xz6WMtb4KyE8Uk-_BZpBNW41VCOxG9PfiHS2upOWFc9b6x8Dw&usqp=CAU)](https://amazone-clone-omega.vercel.app/)
+
+[<div><img src="https://images.squarespace-cdn.com/content/v1/56e9cd4740261d5608e6ead0/1516265102055-SE87DVAY9Z7BL014XVSR/amazon-store-button.png" width=250 style="padding-right:30px" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG1ZM7Lo3rVeTEq1hnw3KE8cRCcKh0oUp2H5RN185fWhsrAcLZaSg4i5w6dfFLHuwN5M&usqp=CAU" width=100 ></div>](https://amazone-clone-omega.vercel.app/)
+
 
 ## Running locally in development mode
 
 To get started, just clone the repository and run `npm install && npm run dev`:
 
-    git clone hhttps://github.com/LinnLatt7012/Amazone-clone.git
+    git clone https://github.com/LinnLatt7012/Amazone-clone.git
     npm install
     npm run dev
 
