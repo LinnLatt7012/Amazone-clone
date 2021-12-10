@@ -7,15 +7,9 @@ It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Preview the example live on [Vercel](https://amazone-clone-omega.vercel.app):
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+[![Open in Vercel](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Aw3Ez-1c-PTy0r7DC7xz6WMtb4KyE8Uk-_BZpBNW41VCOxG9PfiHS2upOWFc9b6x8Dw&usqp=CAU)](https://amazone-clone-omega.vercel.app/)
 
 ## Running locally in development mode
 
