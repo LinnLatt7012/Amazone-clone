@@ -2,7 +2,8 @@ module.exports = {
     images: {
         domains: [
             "links.papareact.com",
-            "fakestoreapi.com"
+            "fakestoreapi.com",
+            "assets.stickpng.com"
         ]
     }
 }
