@@ -1,11 +1,11 @@
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { StarIcon } from "@heroicons/react/solid";
 import Image from 'next/image';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
-function productid({product: { id, title, price, description, category, image}}) {
+function productid({ product: {id, title, price, description, category, image}}) {
 
   const [rating] = useState(
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING)
@@ -23,6 +23,7 @@ function productid({product: { id, title, price, description, category, image}})
 
     // dispatch(addToBasket(product));
   };
+  // const { id, title, price, description, category, image} = props?.product
   const [hasPrime] = useState(Math.random() < 0.5);
 
   return (
@@ -30,7 +31,7 @@ function productid({product: { id, title, price, description, category, image}})
       <p className="absolute top-2 right-2 text-xs italic text-gray-400">
         {category}
       </p>
-      <Image src={image} height={200} width={200} objectFit="contain" />
+      <Image src={image} height={200} width={200} objectFit="contain" loading='lazy' />
       <h4 className="my-3">{title}</h4>
       <div className="flex">
         {Array(rating)
@@ -66,9 +67,8 @@ function productid({product: { id, title, price, description, category, image}})
   )
 }
 export async function getStaticProps({ params }) {
-    const product = await fetch(`https://fakestoreapi.com/products/${params.productId}`).then(
-        (res) => res.json()
-      ); 
+    const data = await fetch(`https://fakestoreapi.com/products/${params.productId}`)
+    const product= await data.json()
     return {
       props: {
         product: product
