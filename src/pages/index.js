@@ -17,7 +17,7 @@ export default function Home({products}) {
     </div>
   )
 } 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await fetch(`https://fakestoreapi.com/products`)
   const products= await data.json()
   return {
