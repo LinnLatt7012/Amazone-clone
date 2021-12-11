@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import CurrencyFormat from 'react-number-format';
+import Link from "next/link";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -48,7 +49,7 @@ function Product({ id, title, price, description, category, image }) {
       </div>
 
       <p className="text-xs my-2 line-clamp-2">{description}</p>
-      <a href={'/products/'+id} key={id} >See more...</a>
+      <Link href={'/products/'+id} key={id} >See more...</Link>
       <div className="mb">
         <CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'$'} />
       </div>

@@ -32,11 +32,11 @@ function Header() {
                 <div className="text-white flex items-center text-xs space-x-6 whitespace-nowrap">
                     {session?
                     <div className="link" onClick={signOut}>
-                        <p> Hello {session.user.username }</p>
+                        <p> Hello {session.user.name}</p>
                         <p className="font-extrabold md:text-sm"> Account & Lists</p>
                     </div> :
                     <div className="link" onClick={signIn}>
-                    <p> Sig In</p>
+                    <p> Sign In</p>
                     <p className="font-extrabold md:text-sm"> Account & Lists</p>
                 </div>
                     }

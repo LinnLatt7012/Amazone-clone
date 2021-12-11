@@ -8,18 +8,21 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_SECRET,
     })
   ],
-  // pages: {
-  //     signIn: "/auth/signin"
-  // },
-  callbacks:{
-    async session({ session, token, user}) {
-      session.user.username = session.user.name
-      .split(" ")
-      .join("")
-      .toLocaleLowerCase();
-      session.user.uid = token.sub;
-      return session;
-    }
+  pages: {
+      signIn: "/auth/signin"
+  },
+  session: {
+    strategy: "jwt",
   }
+  // callbacks:{
+  //   async session({ session, token, user}) {
+  //     session.user.username = session.user.name
+  //     .split(" ")
+  //     .join("")
+  //     .toLocaleLowerCase();
+  //     session.user.uid = token.sub;
+  //     return session;
+  //   }
+  // }
 
 })
