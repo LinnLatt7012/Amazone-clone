@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { StarIcon } from "@heroicons/react/solid";
 import Image from 'next/image';
+import CurrencyFormat from 'react-number-format';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -43,7 +44,7 @@ function productid({ product: {id, title, price, description, category, image}})
 
       <p className="text-xs my-2 ">{description}</p>
       <div className="mb">
-        {/* <Currency quantity={price} currency="USD" /> */}{price}
+      <CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'$'} />
       </div>
 
       {hasPrime && (
