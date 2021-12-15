@@ -1,6 +1,6 @@
 import Image from "next/image";
-// import { useDispatch } from "react-redux";
-// import { addToBasket } from "../slices/basketSlice";
+import { useDispatch } from "react-redux";
+import { addToBasket } from "../slices/basketSlice";
 import { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import CurrencyFormat from 'react-number-format';
@@ -10,7 +10,7 @@ const MAX_RATING = 5;
 const MIN_RATING = 1;
 
 function Product({ id, title, price, description, category, image }) {
-//   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const [rating] = useState(
     //generate random number
@@ -27,8 +27,9 @@ function Product({ id, title, price, description, category, image }) {
       image,
       rating
     };
+    console.log(product);
 
-    // dispatch(addToBasket(product));
+    dispatch(addToBasket(product));
   };
 
   const [hasPrime] = useState(Math.random() < 0.5);

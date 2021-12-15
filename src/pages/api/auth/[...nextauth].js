@@ -6,11 +6,13 @@ export default NextAuth({
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
+      authorization: {
+      }
     })
   ],
-  pages: {
-      signIn: "/auth/signin"
-  },
+  // pages: {
+  //     signIn: "/auth/signin"
+  // },
   session: {
     strategy: "jwt",
   },
