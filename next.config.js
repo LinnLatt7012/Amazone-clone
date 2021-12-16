@@ -5,5 +5,8 @@ module.exports = {
             "fakestoreapi.com",
             "assets.stickpng.com"
         ]
+    },
+    env:{
+        stripe_public_key: process.env.STRIPE_PUBLIC_KEY
     }
 }
