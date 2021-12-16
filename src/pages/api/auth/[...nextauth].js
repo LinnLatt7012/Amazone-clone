@@ -13,9 +13,8 @@ export default NextAuth({
   // pages: {
   //     signIn: "/auth/signin"
   // },
-  session: {
-    strategy: "jwt",
-  },
+  secret:  process.env.NEXTSECRET,
+  session: { jwt: true },
   callbacks:{
     async session({ session, token, user}) {
       session.user.username = session.user.name

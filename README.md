@@ -7,10 +7,10 @@ It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-
 
 ## Preview
 
-Preview the example live on [Vercel](https://amazone-clone-omega.vercel.app):
+Preview the example live on [Vercel](https://amazone-clone-xi.vercel.app/):
 
 
-[<div><img src="https://images.squarespace-cdn.com/content/v1/56e9cd4740261d5608e6ead0/1516265102055-SE87DVAY9Z7BL014XVSR/amazon-store-button.png" width=250 style="padding-right:30px" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG1ZM7Lo3rVeTEq1hnw3KE8cRCcKh0oUp2H5RN185fWhsrAcLZaSg4i5w6dfFLHuwN5M&usqp=CAU" width=100 ></div>](https://amazone-clone-omega.vercel.app/)
+[<div><img src="https://images.squarespace-cdn.com/content/v1/56e9cd4740261d5608e6ead0/1516265102055-SE87DVAY9Z7BL014XVSR/amazon-store-button.png" width=250 style="padding-right:30px" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXG1ZM7Lo3rVeTEq1hnw3KE8cRCcKh0oUp2H5RN185fWhsrAcLZaSg4i5w6dfFLHuwN5M&usqp=CAU" width=100 ></div>](https://amazone-clone-xi.vercel.app/)
 
 
 ## Running locally in development mode
