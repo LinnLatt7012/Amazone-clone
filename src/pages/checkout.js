@@ -79,7 +79,7 @@ const Checkout = () => {
               <h2 className="whitespace-nowrap">
                 Subtotal ({items.length} items) :{" "}
                 <span className="font-bold">
-                 <CurrencyFormat value={subTotal} displayType={'text'} thousandSeparator={true} prefix={'$'} />
+                 <CurrencyFormat value={subTotal.toFixed(2)} displayType={'text'} thousandSeparator={true} prefix={'$'} />
                 </span>
               </h2>
 
