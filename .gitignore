@@ -31,7 +31,7 @@ yarn-error.log*
 .env.production.local
 
 
-permissions.json
+# permissions.json
 
 # vercel
 .vercel
