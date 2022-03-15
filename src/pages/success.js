@@ -21,10 +21,10 @@ function success() {
             the link below.
           </p>
           <button
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/orders")}
             className="button mt-8"
           >
-            Go to home
+            Go to Order
           </button>
         </div>
       </main>
